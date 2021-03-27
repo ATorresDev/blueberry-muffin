@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=New+Tegomin&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/cb7db805ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Blueberry Muffin</title>
+  </head>
+  <body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#home" id="navbar-logo">Blueberry Muffin</a>
+        <div class="navbar-toggle" id="mobile">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-links" id="myhome">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-links" id="mymenu">Menu</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#story" class="navbar-links" id="mystory">Our Story</a>
+          </li>
+          <li class="navbar-btn">
+            <a href="#reservation" class="button"
+              >Make a Reservation</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero" id="home">
+      <div class="hero-container">
+        <h1 class="hero-heading">Breakfast done right!</h1>
+        <p class="hero-description">Breakfast / Brunch / Treats</p>
+        <button class="main-btn"><a href="#menu">Menu</a></button>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <div class="menu" id="menu">
+      <h1 class="menu-heading">~ Menu</h1>
+      <div class="menu-container">
+        <div class="menu-row">
+          <h3 class="menu-subheading">Breakfast Specials</h2>
+          <p class="menu-items">Classic #1</p>
+          <p class="menu-items">Low Carb #2</p>
+          <p class="menu-items">Classic with meat #3</p>
+          <p class="menu-items">Egg Sandwich #4</p>
+          <p class="menu-items">All American #5</p>
+          <p class="menu-items">Hash and Eggs #6</p>
+        </div>
+        <div class="menu-row">
+          <h3 class="menu-subheading">Pancakes and Waffles</h2>
+          <p class="menu-items">Golden Belgian Waffle</p>
+          <p class="menu-items">Blueberry Patchcakes</p>
+          <p class="menu-items">French Toast</p>
+          <p class="menu-items">Golden griddle cakes</p>
+          <p class="menu-items">Crepes</p>
+          <p class="menu-items">Pancake slammer</p>
+        </div>
+        <div class="menu-row">
+          <h3 class="menu-subheading">Bakery</h2>
+          <p class="menu-items">Muffins 1/2 Dozen</p>
+          <p class="menu-items">Blueberry pie</p>
+          <p class="menu-items">Apple Pie</p>
+          <p class="menu-items">Donuts</p>
+          <p class="menu-items">Buttermilk Biscuit</p>
+          <p class="menu-items">Key Lime Pie</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUR STORY -->
+    <div class="story" id="story">
+      <h1 class="story-heading">Our Story</h1>
+      <div class="story-container">
+         <p class="story-text ">Organizer, Craig Stephen, opened the first ‘Organization Name’ Restaurant in Los Alamitos, California on September 27, 1977. Today, there are 37 areas all through Arizona, California, and Illinois.</p>
+        <p class="story-text space">Restaurants are well known with a substantial gathering of people including families, kids, seniors and business experts. Our benevolent condition is perfect for praising unique events.</p>
+      </div>
+    </div>
+
+    <!-- MAKE A RESERVATION -->
+    <div class="reservation" id="reservation">
+      <h1 class="reservation-heading">Book your Table</h1>
+      <div class="reservation-container">
+        <div class="reservation-img">
+
+        </div>
+        <div class="reservation-content">
+          <h3>Reservation</h3>
+          <form>
+            <div class="form-row">
+              <select name="days">
+                <option value="day-select">Select Day</option>
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+              </select>
+
+              <select name="hours">
+                <option value="hour-select">Select hours</option>
+                <option value="8">08: 00</option>
+                <option value="9">09: 00</option>
+                <option value="10">10: 00</option>
+                <option value="11">11: 00</option>
+                <option value="12">12: 00</option>
+              </select>
+
+            </div>
+
+            <div class="form-row">
+              <input type="text" placeholder="Full Name" required>
+              <input type="text" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-row">
+              <input type="number" placeholder="How many persons?" min="1" required>
+              <input type="submit" value="Book Now">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <p>Made by: Anthony Torres</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
